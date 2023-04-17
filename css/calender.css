@@ -1,0 +1,382 @@
+.box{
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.color-theory{
+  margin-bottom: 20px;
+}
+.color-theory li{
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 600;
+}
+.present{
+  background-color: #5D9C59;
+}
+.absence{
+  background-color: #DF2E38;
+}
+.late{
+  background-color: #FC7300;
+}
+.halfday{
+  background-color: #BFDB38;
+}
+.holiday{
+  background-color: #3F0071;
+}
+.pending{
+  background-color: #009FBD;
+}
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li{
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size:12px;
+  color: #fff;
+  
+}
+.days li span{
+  padding: 8px;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+
+/*wallet*/
+
+@media(max-width: 640px){
+  #wallet .mobile {
+     width: 90% !important;
+     margin: auto;
+  }
+}
+
+#wallet .mobile {
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 10% auto;
+  color: #fff;
+}
+
+#wallet .mobile > div {
+  padding: 1rem 2rem;
+}
+
+#wallet .header {
+  background: #21223f;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#wallet .filter {
+  display: flex;
+  padding: 0.5rem;
+  min-width: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #828393;
+  border-radius: 10px;
+}
+
+#wallet .calendar i,
+#wallet .select i,
+#wallet .total .label {
+  color: #828393;
+}
+
+#wallet .content {
+  background: #21223f;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  display: grid;
+}
+
+#wallet .total {
+  align-self: start;
+  justify-self: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#wallet .total > div:not(:first-child):not(:last-child) {
+  margin: 0.5rem;
+}
+
+#wallet .total .label,
+#wallet .card .label {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+#wallet .total .value {
+  font-size: 1.8rem;
+}
+
+#wallet .total .balance {
+  background: #1f3a4a;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #02ca8c;
+}
+
+#wallet .cards {
+  display: grid;
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 0));
+  grid-gap: 10px;
+  align-self: start;
+}
+
+#wallet .card {
+  min-width: 130px;
+  height: 90px;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#wallet .green {
+  background: #00cccc;
+}
+
+#wallet .magenta {
+  background: #7359ff;
+}
+
+#wallet .gray {
+  background: #7a7faf;
+}
+
+#wallet .card .balance {
+  display: flex;
+  align-self: start;
+  padding: 0.5rem 0;
+  width: 60px;
+  justify-content: space-around;
+  font-size: 0.8rem;
+}
+
+#wallet .card .label {
+  color: #adffff;
+  font-size: 0.7rem;
+}
+
+#wallet .card .item {
+  align-self: start;
+  padding: 0.5rem 0;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#wallet .card .arrow-up {
+  transform: rotateZ(45deg);
+}
+
+#wallet .card .item .value {
+  font-size: 1.3rem;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #21233f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #676767;
+  border-radius: 10px;
+}
+
+#wallet .menu {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+}
+
+#wallet .menu li {
+  height: 40px;
+  position: relative;
+}
+
+#wallet .menu label,
+#wallet .menu input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+#wallet .menu input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+}
+
+#wallet .menu input[type="radio"]:checked + label {
+  border-bottom: 1px solid #2181ff;
+  opacity: 1;
+}
+
+#wallet .menu input[type="radio"]:checked + label i {
+  color: #2181ff;
+}
+
+#wallet .menu label {
+  cursor: pointer;
+  z-index: 90;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#wallet .menu label:hover {
+  opacity: 0.7;
+}
+
+#wallet .list {
+  background: #211c3a;
+  display: grid;
+  grid-gap: 5px;
+  padding: 5px 0;
+  height: 180px;
+  overflow-y: auto;
+}
+
+#wallet .list div[class^="item"] {
+  display: flex;
+  justify-content: space-between;
+  background: #21223f;
+  padding: 10px 0;
+}
+
+#wallet .list div[class^="section"] {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+#wallet .list .icon {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+#wallet .list .icon.up {
+  color: #00ff00;
+  transform: rotateZ(30deg);
+}
+
+#wallet .list .icon.down {
+  color: #ff0000;
+  transform: rotateZ(-150deg);
+}
+
+#wallet .list .description {
+  color: #7d7d7d;
+}
+
+#wallet .list .signal {
+  font-weight: bold;
+}
+
+#wallet .list .signal.positive {
+  color: #00ff00;
+}
+
+#wallet .list .signal.negative {
+  color: #ff0000;
+}
